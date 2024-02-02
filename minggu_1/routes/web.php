@@ -14,5 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('servis');
+}); 
+
+Route::get('/about', function () {
+    return 'Ini about yang cantik';
 });
+
+Route::get('/firdaulfa', function () {
+    return view('firdaulfa');
+});
+
+/*Route::get('/vote', [VoteController::class, 'vote'])->midlleware('checkage');
+});
+*/
+
+
+
